@@ -1,0 +1,74 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+body {
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  box-shadow: 0 15px 40px 10px #e6e6e6;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+input:focus {
+  background-color: #e6e6e6;
+}
+
+.results-content {
+  margin-top: 25px;
+}
+
+.results {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.hint-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.hint-title span {
+  font-size: 14px;
+  font-weight: 500;
+}
