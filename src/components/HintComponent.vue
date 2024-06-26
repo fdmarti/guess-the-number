@@ -1,6 +1,6 @@
 <template>
     <section class="hint-title">
-        <h3>Numeros elegidos:</h3>
+        <h3>Chosen numbers:</h3>
         <span v-if="message">{{ message }}</span>
     </section>
 </template>

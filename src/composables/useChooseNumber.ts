@@ -26,22 +26,22 @@ export const useChooseNumber = () => {
 
   const onHandleForm = () => {
     if (gameState.numberValue.toString().length === 0) {
-      setError('Debe ingresar un número válido');
+      setError('You must enter a valid number');
       return;
     }
 
     if (gameState.numberValue < 0) {
-      setError('El número debe ser mayor a 0');
+      setError('The number must be greater than 0');
       return;
     }
 
     if (gameState.numberValue > 100) {
-      setError('El número debe ser menor a 100');
+      setError('The number must be less than 100');
       return;
     }
 
     if (gameState.numberSelected.includes(gameState.numberValue)) {
-      setError('Ya ingresaste ese número');
+      setError('You have already entered this number');
       return;
     }
 
@@ -49,11 +49,11 @@ export const useChooseNumber = () => {
       gameState.numberSelected.push(gameState.numberValue);
 
       if (gameState.numberValue < randomNumber.value) {
-        setHint('¡El número es mas grande!');
+        setHint('The number is bigger!');
       }
 
       if (gameState.numberValue > randomNumber.value) {
-        setHint('¡El número es mas chico!');
+        setHint('The number is smaller');
       }
 
       gameState.numberValue = 0;
@@ -61,7 +61,7 @@ export const useChooseNumber = () => {
     }
 
     gameState.gameStatus = false;
-    setHint('¡Correcto!');
+    setHint('Correct!');
     throwConffeti();
   };
 

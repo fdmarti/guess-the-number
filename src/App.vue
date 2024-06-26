@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h1>Advinia el número</h1>
+    <h1>Guess the number</h1>
 
     <div class="card">
       <TitlesComponent />
@@ -8,8 +8,8 @@
       <input type="number" max="100" min="0" placeholder="0" v-model="gameState.numberValue" id="numberValue"
         name="numberValue" ref="numberRef" @focus="onFocusValue" @keydown.enter="onHandleForm" />
 
-      <ButtonComponent @click="onHandleForm" v-if="gameState.gameStatus" text="Enviar" />
-      <ButtonComponent @click="resetGame" v-else text="Reiniciar" />
+      <ButtonComponent @click="onHandleForm" v-if="gameState.gameStatus" text="Send" />
+      <ButtonComponent @click="resetGame" v-else text="Reset" />
 
     </div>
 
